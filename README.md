@@ -34,7 +34,7 @@ Two part installation:
 
 ## Repository Install
 ### Dependencies
-#### Python 3
+#### [Python 3](https://www.python.org/downloads/)
 1. Install Python 3
 
 #### [std_workspace](https://github.com/Wilfongjt/std_workspace.git)
