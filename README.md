@@ -1,14 +1,75 @@
-# std_api: 
+__std_api__ 
+# Standard Application Programming Interface:
+
 Start with a clear and descriptive title that conveys the purpose of your project. 
 Follow it with a brief summary that explains what your project does and why it's useful or interesting.
 
+Create and maintain a consistent API code base.
+The default API handles DELETE, GET, POST, and PUT functions.
+
+
+__Architecture__
+
+| client | <--> | server | <--> | database |
+| ------ | -- | ------ | -- | -------- |
+| test-route-delete-handler | <--> | api-delete-handler | <--> | sql-delete-handler |
+| test-route-get-handler    | <--> | api-get-handler    | <--> | sql-get-handler |
+| test-route-post-handler   | <--> | api-post-handler   | <--> | sql-post-handler |
+| test-route-put-handler    | <--> | api-put-handler    | <--> | sql-put-handler |
+
 ### Table of Contents: 
 If your README is lengthy, include a table of contents to help users quickly navigate to specific sections.
+
+* [Definitions](definitions.md)
 
 ## Installation: 
 Provide clear instructions on how to install and set up your project. 
 Include any dependencies, libraries, or tools required for the project to run smoothly. 
 If necessary, include code snippets or commands for easy copy-pasting.
+
+# Installation: 
+Two part installation: 
+1. install the repository and then 
+1. install the runtime application.
+
+## Repository Install
+### Dependencies
+#### Python 3
+1. Install Python 3
+
+#### [std_workspace](https://github.com/Wilfongjt/std_workspace.git)
+1. use git.ws.sh workspace tool to download repository
+1. ~/Developement/_tools/git.ws.sh
+
+### The Repository Installation
+
+__Tasks__
+
+* Open a command window
+* Navigate to your home folder, eg cd ~/
+* Create one folder to store all development
+* Create an organization
+* Create a workspace
+* Clone std_workspace
+ 
+__Commands__
+   
+   ```commandline
+    cd ~
+    
+    mkdir Development/
+
+    cd Development/
+    mkdir <ORGANIZATION>/
+    
+    cd <ORGANIZATION>/
+    mkdir <WORKSPACE>/
+    
+    cd <WORKSPACE>/
+    git clone  https://github.com/<<GH_ACCOUNT>>/<PROJECT>.git
+    
+    cd <PROJECT>/
+   ```
 
 ## Usage: 
 Explain how users can use your project. 
